@@ -7,7 +7,7 @@ module.exports = {
 
 function add(message){
     return db('contacts')
-    .insert(message,)
+    .insert(message,"id")
     .then(ids => {
         const [id] = ids;
         return findById(id)
