@@ -18,6 +18,6 @@ function add(message){
 function findById(id){
     return db('contacts')
     .where('id', Number(id))
-    .select("id","name","message")
+    .select("id","name","email","message")
     .first()
 }
