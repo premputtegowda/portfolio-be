@@ -15,6 +15,8 @@ function add(message){
 
 }
 
+//find by the contact id
+
 function findById(id){
     return db('contacts')
     .where('id', Number(id))
